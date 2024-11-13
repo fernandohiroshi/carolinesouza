@@ -1,6 +1,11 @@
 import type { Metadata } from 'next'
-import { Montserrat_Alternates } from 'next/font/google'
 import './globals.css'
+import { Montserrat_Alternates } from 'next/font/google'
+import Link from 'next/link'
+import { PiArrowCircleUpThin } from 'react-icons/pi'
+
+import { Footer } from '@/components/view/footer/Footer'
+import { Header } from '@/components/view/header/Header'
 
 const m = Montserrat_Alternates({
   subsets: ['latin'],
@@ -8,8 +13,8 @@ const m = Montserrat_Alternates({
 })
 
 export const metadata: Metadata = {
-  title: 'Caroline Souza',
-  description: 'Portfólio',
+  title: 'Caroline Souza Design',
+  description: 'Portfolio',
 }
 
 export default function RootLayout({
@@ -19,7 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="!scroll-smooth">
-      <body className={`${m.className} antialiased`}>{children}</body>
+      <body className={`${m.className} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+        <Link href="#" className="fixed bottom-3 right-3">
+          <PiArrowCircleUpThin
+            size={30}
+            className="duration-300 ease-in-out hover:scale-110"
+          />
+        </Link>
+      </body>
     </html>
   )
 }
