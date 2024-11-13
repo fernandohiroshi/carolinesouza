@@ -13,12 +13,12 @@ export async function Portfolio() {
     {
       title: 'Branding',
       imageUrl: portfolios.branding.url,
-      pageUrl: '/branding#branding',
+      pageUrl: '/branding',
     },
     {
       title: 'Social Media',
       imageUrl: portfolios.social.url,
-      pageUrl: '/social#social',
+      pageUrl: '/social',
     },
     {
       title: 'UX/UI',
@@ -28,17 +28,17 @@ export async function Portfolio() {
     {
       title: 'Fotografia',
       imageUrl: portfolios.fotografia.url,
-      pageUrl: '/fotografia#fotografia',
+      pageUrl: '/fotografia',
     },
     {
       title: 'Posters',
       imageUrl: portfolios.posters.url,
-      pageUrl: '/posters#posters',
+      pageUrl: '/posters',
     },
     {
       title: 'Desenhos',
       imageUrl: portfolios.desenhos.url,
-      pageUrl: '/desenhos#desenhos',
+      pageUrl: '/desenhos',
     },
   ]
 
