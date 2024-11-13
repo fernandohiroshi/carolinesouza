@@ -7,7 +7,7 @@ export async function ContainerOne() {
   const { social_box_1 } = object.metadata
 
   return (
-    <div className="mt-16 flex flex-col items-center justify-center gap-8 md:mt-24 md:h-full lg:flex-row">
+    <div className="flex flex-col items-center justify-center gap-8 md:mt-8 md:h-full lg:flex-row">
       <Image
         src={social_box_1.imagem_1.url}
         alt="Image"

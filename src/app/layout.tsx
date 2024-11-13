@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Montserrat_Alternates } from 'next/font/google'
 import Link from 'next/link'
-import { PiArrowCircleUpThin } from 'react-icons/pi'
+import { PiArrowCircleUpFill } from 'react-icons/pi'
 
 import { Footer } from '@/components/view/footer/Footer'
 import { Header } from '@/components/view/header/Header'
@@ -29,9 +29,9 @@ export default function RootLayout({
         {children}
         <Footer />
         <Link href="#" className="fixed bottom-3 right-3">
-          <PiArrowCircleUpThin
+          <PiArrowCircleUpFill
             size={30}
-            className="duration-300 ease-in-out hover:scale-110"
+            className="opacity-60 duration-300 ease-in-out hover:scale-110 hover:opacity-100"
           />
         </Link>
       </body>
