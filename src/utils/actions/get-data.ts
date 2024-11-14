@@ -103,7 +103,7 @@ export async function getDataPosters() {
 export async function getDataDesign() {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/objects/673287b4a40c6c3df2599fc8?read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
+      `${process.env.NEXT_PUBLIC_API_URL}/objects/673287b4a40c6c3df2599fc8?pretty=true&read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
     )
 
     if (!res.ok) {
