@@ -69,7 +69,7 @@ export async function getDataUxui() {
 export async function getDataFoto() {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/objects/6732434c1b927471f4a678d2?read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
+      `${process.env.NEXT_PUBLIC_API_URL}/objects/6732434c1b927471f4a678d2?pretty=true&read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
     )
 
     if (!res.ok) {
@@ -103,10 +103,10 @@ export async function getDataPosters() {
 export async function getDataDesign() {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/objects/673287b4a40c6c3df2599fc8?pretty=true&read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
+      `${process.env.NEXT_PUBLIC_API_URL}/objects/673287b4a40c6c3df2599fc8?pretty=true&read_key=${process.env.READ_KEY}&depth=1&props=title%2Cmetadata&limit=10&skip=0&sort=-order`,
     )
 
-    if (!res.ok) {
+    https: if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
 
