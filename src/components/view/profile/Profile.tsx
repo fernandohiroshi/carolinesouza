@@ -21,8 +21,8 @@ export function Profile({ titulo, bio, foto }: ProfileProps) {
       id="perfil"
     >
       <div className="grid grid-cols-12 gap-2 lg:gap-4">
-        <Box className="col-span-8 flex flex-col items-start justify-around lg:col-span-8 lg:justify-normal">
-          <h1 className="mb-1 text-xl font-semibold md:text-3xl lg:mb-4">
+        <Box className="col-span-7 flex flex-col items-start justify-around lg:col-span-8 lg:justify-normal">
+          <h1 className="mb-1 text-lg font-semibold md:text-3xl lg:mb-4">
             {titulo}
           </h1>
           <p className="rounded-xl text-justify text-xs text-neutral-700 lg:bg-neutral-200/30 lg:p-4 lg:text-sm">
@@ -31,7 +31,7 @@ export function Profile({ titulo, bio, foto }: ProfileProps) {
         </Box>
 
         {/* PROFILE IMAGE */}
-        <Box className="col-span-4 overflow-hidden rounded-xl p-0 lg:col-span-4 lg:row-span-2">
+        <Box className="col-span-5 overflow-hidden rounded-xl p-0 lg:col-span-4 lg:row-span-2">
           <Image
             alt={titulo}
             src={foto}

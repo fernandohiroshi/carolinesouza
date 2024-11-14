@@ -5,7 +5,7 @@ interface HeroProps {
 export function Hero({ titulo, subtitulo }: HeroProps) {
   return (
     <section
-      className="relative mt-8 flex scroll-mt-40 flex-col items-start justify-center lg:-mt-16 lg:h-screen lg:items-center"
+      className="relative mt-8 hidden scroll-mt-40 flex-col items-start justify-center md:flex lg:-mt-16 lg:h-screen lg:items-center"
       id="hero"
     >
       <div className="z-40">
@@ -13,7 +13,7 @@ export function Hero({ titulo, subtitulo }: HeroProps) {
           {titulo}
         </h1>
 
-        <p className="z-50 max-w-xl text-xs text-neutral-900 md:text-sm lg:text-center">
+        <p className="z-50 max-w-xl text-xs text-neutral-900 md:block md:text-sm lg:text-center">
           {subtitulo}
         </p>
       </div>

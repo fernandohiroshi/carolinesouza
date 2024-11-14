@@ -13,7 +13,7 @@ export async function ContainerOne() {
         alt="Image"
         width={300}
         height={600}
-        className="h-[26rem] object-cover"
+        className="h-[26rem] object-cover shadow-xl"
       />
 
       <Image
@@ -21,7 +21,7 @@ export async function ContainerOne() {
         alt="Image"
         width={300}
         height={600}
-        className="h-[26rem] max-w-full object-cover lg:h-[30rem]"
+        className="h-[26rem] max-w-full object-cover shadow-xl lg:h-[30rem]"
       />
 
       <Image
@@ -29,7 +29,7 @@ export async function ContainerOne() {
         alt="Image"
         width={300}
         height={600}
-        className="h-[26rem] object-cover"
+        className="h-[26rem] object-cover shadow-xl"
       />
     </div>
   )

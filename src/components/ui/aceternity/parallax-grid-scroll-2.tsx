@@ -35,7 +35,7 @@ export const ParallaxScroll2 = ({
       ref={gridRef}
     >
       <div
-        className="mx-auto mt-16 grid max-w-5xl grid-cols-1 items-start gap-10 md:grid-cols-2"
+        className="mx-auto mt-8 grid max-w-5xl grid-cols-1 items-start gap-10 md:mt-16 md:grid-cols-2"
         ref={gridRef}
       >
         <div className="relative grid gap-10">
@@ -43,7 +43,7 @@ export const ParallaxScroll2 = ({
             <motion.div style={{ y: translateFirst }} key={'grid-1' + idx}>
               <Image
                 src={el}
-                className="!m-0 h-[36rem] w-full gap-10 rounded-lg object-cover object-center !p-0"
+                className="!m-0 h-[30rem] w-full gap-10 rounded-lg object-cover object-center !p-0 md:h-[36rem]"
                 height="400"
                 width="800"
                 alt="thumbnail"

@@ -5,7 +5,7 @@ import { ContainerFour } from './components/container4'
 
 export default function SocialMedia() {
   return (
-    <section className="my-16 flex flex-col items-center justify-center md:gap-72">
+    <section className="flex flex-col items-center justify-center md:gap-72">
       {/* CONTAINER 1 */}
       <ContainerOne />
 

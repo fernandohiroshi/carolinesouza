@@ -12,7 +12,7 @@ export async function Experiences() {
       <div className="flex grid-cols-12 flex-col gap-4 lg:grid lg:gap-8">
         {/* EXPERIENCES */}
         <div className="col-span-6">
-          <h2 className="mb-2 text-xl font-semibold lg:mb-4">Experiências</h2>
+          <h2 className="mb-2 text-lg font-semibold lg:mb-4">Experiências</h2>
           {experiencia.map((e, index) => (
             <div key={e.empresa} className="flex flex-col gap-2">
               <h3 className="text-sm">{e.empresa}</h3>
@@ -30,7 +30,7 @@ export async function Experiences() {
 
         {/* GRADUATION */}
         <div className="col-span-6">
-          <h2 className="mb-2 text-xl font-semibold lg:mb-4">Formação</h2>
+          <h2 className="mb-2 text-lg font-semibold lg:mb-4">Formação</h2>
           {formacao.map((f, index) => (
             <div key={f.curso} className="flex flex-col gap-2">
               <h3 className="text-sm">{f.curso}</h3>

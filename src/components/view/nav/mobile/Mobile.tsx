@@ -18,7 +18,7 @@ export function MobileMenu() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <nav className="flex items-center justify-end px-4 py-4 lg:hidden">
+    <nav className="mb-16 flex items-center justify-end px-4 py-4 lg:hidden">
       <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
         <DropdownMenuTrigger asChild>
           <Button variant="outline">
