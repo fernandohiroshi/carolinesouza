@@ -18,7 +18,7 @@ export async function getDataHome() {
 export async function getDataBranding() {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/objects/670eefaa031c6d71de80eb22?read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
+      `${process.env.NEXT_PUBLIC_API_URL}/objects/670eefaa031c6d71de80eb22?pretty=true&read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
     )
 
     if (!res.ok) {
