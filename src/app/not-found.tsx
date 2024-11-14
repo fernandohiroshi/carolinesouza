@@ -12,9 +12,11 @@ export default function NotFound() {
         height={100}
         src={notFoundAnimation}
         alt="Animation"
-        className=""
+        className="opacity-80 md:w-[10rem]"
       />
-      <h1 className="mt-8 text-center text-xl">This page does not exist.</h1>
+      <h1 className="mt-4 text-center text-xl md:text-2xl">
+        Essa página não existe.
+      </h1>
     </div>
   )
 }
