@@ -83,10 +83,10 @@ export async function getDataFoto() {
   }
 }
 
-export async function getDataPoster() {
+export async function getDataPosters() {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/objects/673268c91b927471f4a6790b?read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
+      `${process.env.NEXT_PUBLIC_API_URL}/objects/67357f9dd24fb1bb49e9ee3f?pretty=true&read_key=${process.env.READ_KEY}&depth=1&props=title,metadata`,
     )
 
     if (!res.ok) {

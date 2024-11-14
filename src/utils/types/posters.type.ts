@@ -4,11 +4,11 @@ type ImageProps = {
 }
 
 type PosterItem = {
-  images: ImageProps
+  image: ImageProps
 }
 
 type PosterMetadata = {
-  poster: PosterItem[]
+  posters: PosterItem[]
 }
 
 export type PosterProps = {
